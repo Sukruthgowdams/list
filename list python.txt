@@ -1,0 +1,120 @@
+list1=[]
+def read():
+    n=int(input("Enter the number of students \n"))
+    for i in range(0,n):
+        elem=input("Enter SRN: \n")
+        list1.append(elem)
+        print(list1)
+read()
+
+f=input("DO you want to add more SRN?....(Y/n) \n")
+if 'y' in f:
+    pos=int(input("Enter the position where you want to enter"))
+    s=input("Enter SRN :\n")
+    list1.insert(pos,s)
+else:
+    pass
+print(list1)
+p=(input("Enter the element from list to be printed \n"))
+print("Index of element",p,"is :", list1.index(p))
+
+
+a = 7.456
+b = int(a)
+print(b)
+print(type(b))
+
+c = 7
+d = float(c)
+print(d)
+print(type(d))
+
+e = 's'
+i = 'u'
+j = 'k'
+k = 'r'
+l = 'u'
+m = 't'
+n = 'h'
+print(e,i,j,k,l,m,n)
+f = int(ord(e))
+print(f)
+
+g = 97
+print(g)
+h = chr(g)
+print(h)
+
+
+
+L1 = [1,-1,2.0,"HELLO",2+9j,-1,100]
+type(L1)
+print(L1)
+print("The length of the list 1 is:",len(L1))
+#print(L1.index(-1)+1)
+#print(L1.count(1))
+L1.append("sukruth")
+print(L1)
+print("The length of the list 1 is:",len(L1))
+L1.remove("sukruth")
+print(L1)
+print("The length of the list 1 is:",len(L1))
+L1[2]="HEY"
+print(L1)
+print("The length of the list 1 is:",len(L1))
+print("New list")
+l2 = L1.copy()
+print(l2)
+print("The length of the list 2 is:",len(l2))
+l2.insert(4,"USER")
+print(l2)
+print("The length of the list 2 is:",len(l2))
+l2.pop(5)
+print(l2)
+print("The length of the list 2 is:",len(l2))
+l2.reverse()
+print(l2)
+L1.extend(l2)
+print(L1)
+L3 = [3,4,5,6,7,10,9,1,2,0]
+L3.sort()
+print(L3)
+L1.clear()
+print(L1)
+
+
+
+
+name = input("Enter your name: ")
+SRN = input("Enter SRN: ")
+sem = int(input("Enter sem: "))
+branch = input("Enter branch: ")
+college = input("Enter College name: ")
+
+print("Name: ",name,"\n"
+      "SRN" , SRN,"\n"
+      "Sem: ",sem,"\n"
+      "Branch: ",branch,"\n"
+      "College: ",college)
+
+
+num1= float(input("enter num1  :"))
+num2= float(input("enter num2  :"))
+ask = input("choose the operation. + - * /")
+if "+" in ask: 
+    print (num1 + num2)
+elif "-" in ask:
+    print(num1 - num2)
+elif "*" in ask:
+    print(num1 * num2)
+elif "/" in ask:
+    print(num1/num2)
+
+
+t1=()
+type(t1)
+t1=("s","u","k","r","u","t","h")
+print(t1)
+print("The length of the touple 1 is:",len(t1))
+print(t1.index(k))
+print(t1.count("t"))
